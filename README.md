@@ -2,6 +2,10 @@
 
 This repository contains code for the prompt-based image retrieval project. The goal of this project is to retrieve images based on a given prompt using a pre-trained image classification model.
 
+## IMPORTANT NOTE:
+
+Please note that the pre-trained image classification model used in this project has been stored on Google Cloud Storage.
+To use it, you need to download the model file from that platform and place it in the model folder before running predict.py and image_retrieval.py. You can download the file from the following link: [Google Cloud Storage](https://drive.google.com/file/d/1HHBBgmF-HIenATO4MG2NkQmckvbW8wkJ/view?usp=share_link).
 
 ## Requirements
 
