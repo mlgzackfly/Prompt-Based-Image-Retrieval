@@ -28,12 +28,7 @@ pip install -r requirements.txt
 
 3. Modify the configuration in config.py according to your needs.
 
-4. Run the following command to generate prompt embeddings:
-```bash
-python predict.py
-```
-
-5. Run the following command to perform image retrieval:
+4. Run the following command to perform image retrieval:
 ```bash
 python image_retrieval.py 
 ```
