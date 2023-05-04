@@ -101,8 +101,8 @@ print(image_ids)
 query_image_id = 'example'
 query_image_index = image_ids.index(query_image_id)
 
-# 取得與查詢圖像最相似的前 5 張圖像及其相似度
-n_results = 5
+# 取得與查詢圖像最相似的前 20 張圖像及其相似度
+n_results = 20
 distances = dist_mat[query_image_index]
 top_indices = np.argsort(distances)[:n_results]
 top_distances = distances[top_indices]
