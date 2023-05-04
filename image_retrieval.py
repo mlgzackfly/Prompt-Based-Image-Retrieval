@@ -79,9 +79,9 @@ def predict(images, model_path, model_name, input_size, batch_size):
 
     return np.vstack(preds)
 
-# 提取所有圖像的 prompt_embeddings
-image_dir = Path('image_db')
-image_files = list(image_dir.glob('*.[jJ][pP][gG]'))
+# 提取所有圖片的 prompt_embeddings
+image_dir = Path('kaggle')
+image_files = list(image_dir.glob('*.[pP][nN][gG]'))
 image_embeddings = predict(image_files, CFG.model_path, CFG.model_name, CFG.input_size, CFG.batch_size)
 image_ids = [f.stem for f in image_files]
 image_embeddings_df = pd.DataFrame(
