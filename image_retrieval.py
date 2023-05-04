@@ -110,4 +110,4 @@ top_distances = distances[top_indices]
 # 顯示結果
 print(f'Top {n_results} similar images to {query_image_id}:')
 for i, (idx, distance) in enumerate(zip(top_indices, top_distances)):
-    print(f'Top {i + 1}: {image_ids[idx]} (similarity: {1 / (distance + 1e-6):.4f})')
+    print(f'Top {i + 1}: {image_ids[idx]} (similarity: {1 / (distance + 1e-6):.2f})')
